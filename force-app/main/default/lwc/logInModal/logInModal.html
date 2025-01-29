@@ -1,0 +1,13 @@
+<template>
+    <template lwc:if={isLogInOpen}>
+        <c-modal size="small" onclose={handleModalClose}>
+            <h1 slot="title">Access Your Support Portal</h1>
+            <div slot="body" class="slds-var-m-around_x-large">
+                <lightning-input type="text" label="Email" placeholder="abc@example.com"></lightning-input>
+            </div>
+            <div slot="footer">
+                <lightning-button label="Log In" onclick={handleLogInClick}></lightning-button>
+            </div>
+        </c-modal>
+    </template>
+</template>
